@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "7fb4e4f2-e34c-4cbb-b0e0-34485c4a1911",
+		"name": "Express_backend_react_0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13143158"
+	},
+	"item": [
+		{
+			"name": "registro usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer adfasdfefefe",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"elena\",\r\n    \"email\": \"elena@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/auth/registro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login usuario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer adfasdfefefe",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"elena@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/auth/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "renovarToken",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer adfasdfefefe",
+						"type": "text"
+					},
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MjgwNWE2OTdhNDQ2OTE1NzJjYzI0NDYiLCJuYW1lIjoiRXJpYyIsImlhdCI6MTY1MjU4OTEyOCwiZXhwIjoxNjUyNTk2MzI4fQ._T3D7USHkXt4PnpvI1_U-7_Fn3mUOYrU4JOzd9H41_U",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/auth/renovar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"auth",
+						"renovar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Events",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2YjM3MzcxMDAwZmIxMzA4YTVhYjAiLCJuYW1lIjoiZWxlbmEiLCJpYXQiOjE2NzgxNjA4MTAsImV4cCI6MTY3ODE2ODAxMH0.-JTYIqc_GRI6Mmz9ybwIIFMeBhDH22uWJW_KdUt-A-I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/events/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"events",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post Events",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2YjM3MzcxMDAwZmIxMzA4YTVhYjAiLCJuYW1lIjoiZWxlbmEiLCJpYXQiOjE2NzgxNjA4MTAsImV4cCI6MTY3ODE2ODAxMH0.-JTYIqc_GRI6Mmz9ybwIIFMeBhDH22uWJW_KdUt-A-I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Agregando evento Elena\",\r\n    \"start\": 1,\r\n    \"end\": 1000000,\r\n    \"notes\": \"Cumpleaños elena\",\r\n    \"ABC\": 123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/events/evento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"events",
+						"evento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put Events",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2YjM3MzcxMDAwZmIxMzA4YTVhYjAiLCJuYW1lIjoiZWxlbmEiLCJpYXQiOjE2NzgxNjA4MTAsImV4cCI6MTY3ODE2ODAxMH0.-JTYIqc_GRI6Mmz9ybwIIFMeBhDH22uWJW_KdUt-A-I",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Cumple elena provando update\",\r\n    \"start\": 1000000,\r\n    \"end\": 200000,\r\n    \"notes\": \"Hola Mundo....\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/events/evento/6406b3fd71000fb1308a5ab5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"events",
+						"evento",
+						"6406b3fd71000fb1308a5ab5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete Events",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NDA2YjM3MzcxMDAwZmIxMzA4YTVhYjAiLCJuYW1lIjoiZWxlbmEiLCJpYXQiOjE2NzgxNjA4MTAsImV4cCI6MTY3ODE2ODAxMH0.-JTYIqc_GRI6Mmz9ybwIIFMeBhDH22uWJW_KdUt-A-I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/events/evento/62814b3e090f9d1f5c59baba",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"events",
+						"evento",
+						"62814b3e090f9d1f5c59baba"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
