@@ -91,8 +91,8 @@ const revalidarToken = async (req, res = response) => {
     res.json({
         ok: true,
         //        msg: "renovar_jwt"
-        //uid: uid,     //ambos son iguales 
-        //name,
+        uid: uid,     //ambos son iguales 
+        name,
         token         //esta es la manera de revalidar el token
     })
 }

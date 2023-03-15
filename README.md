@@ -6,7 +6,7 @@ Backend creado para aplicación MERN Calendar Mongo, Express, React y Node.js
 ## para inicializar el proyecto
 
 - clonar el repositorio
-        $ git clone <link del repositorio a clona> 
+        $ git clone link del repositorio a clonar
 
 - npm install 
 
