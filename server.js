@@ -24,6 +24,7 @@ app.use(cors())
 app.use(express.static("public"))
 
 // lectura y parseo el body
+app.use( express.urlencoded({ extended: true }))
 app.use( express.json() );
 
 //Rutas
